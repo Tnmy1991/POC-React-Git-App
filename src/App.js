@@ -35,6 +35,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    boxShadow: 'none'
   },
   card: {
     maxWidth: 345,
@@ -48,8 +49,73 @@ const useStyles = makeStyles(theme => ({
   },
   filterbytype: {
     width: '100%'
+  },
+  filter: {
+    padding: '18px',
+  },
+  progressbar: {
+    marginTop: '10px'
+  },
+  repos: {
+    textAlign: 'left',
+    boxShadow: 'none',
+    padding: '15px 0px 15px 0px',
+    borderBottom: '1px solid #e1e4e8'
+  },
+  repotitle: {
+    color: '#0366d6',
+    fontWeight: 600,
+    fontSize: '20px',
+    marginBottom: '10px'
+  },
+  reposummary: {
+    color: '#586069',
+    fontWeight: 300,
+    fontSize: '12px',
+    marginBottom: '10px'
+  },
+  userdetails: {
+    listStyle: 'none',
+    marginBottom: '16px',
+    paddingLeft: '22px',
+    marginTop: '30px',
+    fontSize: '14px'
+  },
+  useraddress: {
+    width: '100%',
+    display: 'inline-block',
+    verticalAlign: 'top',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    paddingTop: '7px'
+  },
+  useremail: {
+    width: '100%',
+    display: 'inline-block',
+    verticalAlign: 'top',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    paddingTop: '7px',
+    textAlign: 'left',
+    color: '#0366d6',
+    textDecoration: 'none'
+  },
+  usericon: {
+    marginLeft: '-22px',
+    float: 'left',
+    width: '16px',
+    marginTop: '3px',
+    color: '#6a737d',
+    textAlign: 'center',
+    verticalAlign: 'text-bottom',
+    display: 'inline-block',
+    fill: 'currentColor'
   }
 }));
+
+
 
 function App() {
   const classes = useStyles();
