@@ -78,7 +78,11 @@ class FilterComponent extends React.Component {
     return(
       <Grid container spacing={2}>
         <Grid item xs={8}>
-          <BootstrapInput className={classes.searchbox} onChange={(e) => this.handleSearch(e, this)}/>
+          <BootstrapInput 
+            className={classes.searchbox} 
+            placeholder="Find a repository…" 
+            onChange={(e) => this.handleSearch(e, this)}
+            />
         </Grid>
         <Grid item xs={2}>
           <FormControl className={classes.filterbytype}>
